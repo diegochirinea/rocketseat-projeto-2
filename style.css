@@ -1,0 +1,126 @@
+body{
+    margin: 0px;
+    font-family: 'Open Sans', sans-serif;
+
+    /*Gradiente, aceita 3 termos*/
+    background: linear-gradient(180deg, rgba(227, 255, 248, 0.00) 82.08%, rgba(227, 255, 248, 0.38) 100%);
+
+    min-height: 100hv;
+}
+
+/*'margin' adiciona espaço fora da caixa e 'paggind' adiciona espaço dentro da caixa (preenchimento)*/
+
+.page{
+    width: 1000px;
+    margin: 0px auto;
+    padding-top: 65px;
+} 
+
+/*Aqui usamos o DevTools para pegar esse código*/
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 55px;
+}
+
+/*Aqui usamos o DevTools para pegar esse código*/
+ul{
+    list-style-type: none;
+    display: flex;
+    gap: 48px;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Mulish', sans-serif;
+}
+
+ul li a{
+    /*para retirar o sublinhado*/
+    text-decoration: none;
+    color: #1F1534;
+    opacity: 0.5;
+}
+
+/*pseudo-class*/
+ul li a:hover {
+    /*Sempre que passar o mouse em cima ele fica negrito*/
+    font-weight: bold;
+    opacity: 1;
+
+}
+
+main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1{
+    font-family: 'Mulish', sans-serif; 
+    font-size: 49px;
+    line-height: 56px;
+    color: #000;
+    font-weight: normal;
+}
+
+h1 span{
+    color: #89C5CC;
+    font-weight: bold;
+}
+
+section p{
+    font-size: 14px;
+    line-height: 28px;
+    color: #7D7987;
+
+    margin: 40px 0;
+}
+
+button{
+    /*deixar tudo maiúsculo*/
+    text-transform: uppercase;
+    font-family: Open Sans;
+    font-size: 16px; 
+    color: #F9F9F9;
+    
+    background: var(--Primary-color, #69B99D);
+    border: none;
+    padding: 14px 32px 15px 32px;
+    border-radius: 4px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    /*para ficar a mãozinha qnd passa o mouse emcima*/   
+    cursor: pointer;
+}
+
+/*colocamos um cor um pouco mais escura porque ao passar o mouse sobre o botão de a sensação de que muda algo*/   
+button:hover {
+    background: #24a87a;
+}
+
+footer{
+    color: #000;
+    font-family: Open Sans;
+    font-size: 14px;
+    line-height: 28px;
+
+    text-align: center;
+    margin-top: 80px;
+}
+
+footer a{
+    font-weight: bold;
+    text-decoration: none;
+    color: #000;
+}
+
+#balls{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
